@@ -1,0 +1,67 @@
+{
+    "version":  1,
+    "projects":  [
+                      {
+                          "id":  "analysic-data",
+                          "name":  "analysic-data",
+                          "domain":  "data",
+                         "lifecycle_status":  "active",
+                         "execution_status":  "discovery",
+                         "priority":  "medium",
+                         "phase":  "discovery",
+                         "report_day":  "Friday",
+                         "approval_sensitivity":  "medium",
+                         "qa_mode":  "data",
+                          "project_home":  "projects/data/analysic-data",
+                          "repo_url":  "",
+                          "repo_required":  true,
+                          "machine_paths":  {
+                                                "WIN-HYPERV-1":  "C:\\local\\analysic-data"
+                                            },
+                          "local_path":  "C:\\local\\analysic-data",
+                          "default_branch":  "main",
+                         "jira_epic_key":  "",
+                         "jira_epic_url":  "",
+                         "notion_page_link":  "",
+                         "notion_page_id":  "",
+                         "current_focus":  "initial project setup and discovery",
+                         "last_team_sync":  "",
+                         "last_repo_sync":  "",
+                         "last_handoff":  "",
+                         "last_report_draft":  "",
+                         "last_report_published":  "",
+                         "delete_reason":  ""
+                     },
+                      {
+                          "id":  "explore-CAN-message-motor-voltage",
+                          "name":  "explore-CAN-message-motor-voltage",
+                          "domain":  "data",
+                          "lifecycle_status":  "active",
+                          "execution_status":  "discovery",
+                          "priority":  "medium",
+                          "phase":  "discovery",
+                         "report_day":  "Friday",
+                         "approval_sensitivity":  "medium",
+                         "qa_mode":  "data",
+                           "project_home":  "projects/data/explore-CAN-message-motor-voltage",
+                          "repo_url":  "",
+                          "repo_required":  true,
+                          "machine_paths":  {
+                                                "WIN-HYPERV-1":  "C:\\local\\find_motor_voltage"
+                                            },
+                          "local_path":  "C:\\local\\find_motor_voltage",
+                          "default_branch":  "main",
+                         "jira_epic_key":  "",
+                         "jira_epic_url":  "",
+                         "notion_page_link":  "",
+                         "notion_page_id":  "",
+                          "current_focus":  "map CAN messages related to motor voltage and identify the source data path",
+                         "last_team_sync":  "",
+                         "last_repo_sync":  "",
+                         "last_handoff":  "",
+                         "last_report_draft":  "",
+                         "last_report_published":  "",
+                         "delete_reason":  ""
+                     }
+                 ]
+}

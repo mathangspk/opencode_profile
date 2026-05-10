@@ -43,24 +43,21 @@ project-root/
 
 ## 3. Create the project profile
 
-1. Copy `projects/_templates/project-profile.md` into the right domain folder:
-   - `projects/data/`
-   - `projects/web/`
-   - `projects/iot/`
+1. Create the project home with `install/new-project-home.ps1`.
 2. Fill in the minimum fields:
-   - project name
-   - repo URL
-   - local path
-   - Jira Epic key
-   - Notion page link
-   - QA mode
-   - critical flows
-   - approval sensitivity
+    - project name
+    - repo URL
+    - local path
+    - Jira Epic key
+    - Notion page link
+    - QA mode
+    - critical flows
+    - approval sensitivity
 
 ## 4. Register the project
 
-1. Add the project to `projects/registry/projects-index.md`.
-2. Add the project to `projects/registry/active.md` if it is active now.
+1. Confirm the script updated `projects/registry/projects.json`.
+2. Confirm the dashboards under `projects/registry/*.md` were refreshed.
 
 ## 5. Run the first orchestration pass
 
@@ -91,6 +88,7 @@ I need:
 The project is ready when:
 
 1. OpenCode scaffold is in place.
-2. Project profile is filled in.
+2. Project home is filled in.
 3. Registry entries are updated.
-4. `explore-agent` has produced the initial project map.
+4. `.opencode/agents/orchestrator.md` includes the team project ref and domain.
+5. `explore-agent` has produced the initial project map.

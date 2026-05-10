@@ -1,0 +1,53 @@
+{
+    "project":  {
+                    "name":  "explore-CAN-message-motor-voltage",
+                    "domain":  "data"
+                },
+    "sources":  {
+                    "local_path":  "C:\\local\\find_motor_voltage",
+                    "repo_url":  "",
+                    "jira_epic_key":  "TBD",
+                    "jira_epic_url":  "TBD",
+                    "notion_page_id":  "TBD",
+                    "notion_page_link":  "TBD"
+                },
+    "reporting":  {
+                      "cadence":  "weekly",
+                      "report_day":  "Friday",
+                      "timezone":  "Asia/Ho_Chi_Minh",
+                      "publish_mode":  "manual-copy",
+                      "approval_required":  true
+                  },
+    "jira":  {
+                 "enabled":  true,
+                 "target":  "epic-comment",
+                 "template":  "weekly-comment-template",
+                 "fields_to_read":  [
+                                        "status",
+                                        "summary",
+                                        "child_issues",
+                                        "blockers"
+                                    ]
+             },
+    "notion":  {
+                   "enabled":  true,
+                   "target":  "weekly-toggle",
+                   "template":  "weekly-toggle-template",
+                   "section_style":  "narrative"
+               },
+    "overrides":  {
+                      "required_sections":  [
+
+                                            ],
+                      "commercial_focus":  [
+
+                                           ],
+                      "forbidden_claims":  [
+
+                                           ],
+                      "team_notes":  [
+
+                                        "Flag signal interpretation uncertainty explicitly until validated"
+                                      ]
+                  }
+}

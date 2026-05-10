@@ -1,13 +1,8 @@
 # Projects Index
 
-| Project | Domain | Status | Phase | Report Due | Jira Epic | Approval | Notion Page | Repo | Local Path |
-|---|---|---|---|---|---|---|---|---|---|
-| Example Project | web | active | delivery | Friday | PROJ-123 | medium | notion://example-project | git@github.com:example/repo.git | /path/to/example-project |
-| analysic-data | data | active | discovery | Friday | TBD | medium | TBD |  | `C:\local\analysic-data` |
+Generated from projects/registry/projects.json.
 
-## Notes
-
-- Keep one row per project.
-- Use the Jira Epic as the main anchor.
-- Keep local paths updated when you move machines.
-- Track approval sensitivity for architecture changes.
+| Project | Domain | Lifecycle | Execution | Phase | Report Day | Jira Epic | Approval | Project Home | Repo | Local Path | Last Handoff |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| analysic-data | data | active | discovery | discovery | Friday | TBD | medium | `projects/data/analysic-data` |  | `C:\local\analysic-data` |  |
+| explore-CAN-message-motor-voltage | data | active | discovery | discovery | Friday | TBD | medium | `projects/data/explore-CAN-message-motor-voltage` |  | `C:\local\find_motor_voltage` |  |

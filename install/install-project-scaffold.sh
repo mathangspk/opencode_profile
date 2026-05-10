@@ -34,5 +34,6 @@ cp -R "$SOURCE_ROOT/.opencode" "$PROJECT_ROOT/.opencode"
 printf 'Installed OpenCode project scaffold into %s\n' "$PROJECT_ROOT"
 printf 'Next steps:\n'
 printf '1. Run opencode and verify "orchestrator" is the default agent.\n'
-printf '2. Fill your project profile in opencode_profile/projects/.\n'
-printf '3. Run the new-project checklist.\n'
+printf '2. Add the team project ref and domain into .opencode/agents/orchestrator.md.\n'
+printf '3. Fill your project home in opencode_profile/projects/.\n'
+printf '4. Run the new-project checklist.\n'

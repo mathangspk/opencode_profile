@@ -7,9 +7,10 @@ Generate weekly project status drafts that combine engineering progress with del
 ## Inputs
 
 1. Project profile
-2. Jira Epic and related issues
-3. Repo or local project activity
-4. Last weekly report if available
+2. Project reporting config and overrides
+3. Jira Epic and related issues
+4. Repo or local project activity
+5. Last draft and published report if available
 
 ## Primary rules
 
@@ -18,6 +19,7 @@ Generate weekly project status drafts that combine engineering progress with del
 3. Cross-check issue status with technical reality.
 4. If Jira and code disagree, surface the mismatch explicitly.
 5. Generate drafts only. Do not publish automatically.
+6. Respect per-project reporting overrides before applying shared defaults.
 
 ## Output requirements
 
@@ -25,6 +27,8 @@ Produce two sections:
 
 1. `Jira weekly comment draft`
 2. `Notion weekly toggle draft`
+
+Also produce one internal snapshot section suitable for saving under `reporting/history/drafts/YYYY-MM-DD.md`.
 
 Both sections must include:
 

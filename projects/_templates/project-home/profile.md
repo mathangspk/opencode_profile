@@ -2,15 +2,16 @@
 
 ## Identity
 
-- Project name: analysic-data
-- Domain: `data`
-- Status: `active`
-- Priority: medium
+- Project name:
+- Domain: `data` | `web` | `iot`
+- Status: `planned` | `active` | `paused` | `done` | `archived`
+- Priority:
 
 ## Repositories
 
 - Repo URL:
-- Local path: `C:\local\analysic-data`
+- Local path:
+- Default branch: `main`
 
 ## Jira
 
@@ -26,14 +27,14 @@
 ## Delivery context
 
 - Commercial context:
-- Current phase: discovery
+- Current phase:
 - Definition of done:
 - Weekly report day: `Friday`
-- Approval sensitivity: `medium`
+- Approval sensitivity: `low` | `medium` | `high`
 
 ## Working context
 
-- Current focus: initial project setup and discovery
+- Current focus:
 - Known blockers:
 - Key risks:
 - Reporting notes:
@@ -56,20 +57,21 @@
 
 ## OpenCode setup
 
-- OpenCode scaffold copied: `yes`
+- OpenCode scaffold copied: `yes` | `no`
 - Default primary agent: `orchestrator`
 - Default model: `openai/gpt-5.4`
 - Agent overrides:
+- Team project ref:
 
 ## Testing and validation
 
 - Testing strategy:
 - Acceptance checks:
-- QA mode: `data`
+- QA mode: `data` | `web` | `iot`
 - QA priorities:
 
 ## Agent notes
 
-- Review priorities: data correctness, transformation safety, chart interpretation risk, and missing validation
+- Review priorities:
 - Areas to avoid unless required:
-- Expected output style: concise, evidence-based, and decision-oriented
+- Expected output style:

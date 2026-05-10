@@ -36,5 +36,6 @@ foreach ($target in $targets) {
 Write-Host "Installed OpenCode project scaffold into $projectRoot"
 Write-Host "Next steps:"
 Write-Host "1. Run opencode and verify 'orchestrator' is the default agent."
-Write-Host "2. Fill your project profile in opencode_profile/projects/."
-Write-Host "3. Run the new-project checklist."
+Write-Host "2. Add the team project ref and domain into .opencode/agents/orchestrator.md."
+Write-Host "3. Fill your project home in opencode_profile/projects/."
+Write-Host "4. Run the new-project checklist."

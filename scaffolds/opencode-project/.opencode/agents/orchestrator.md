@@ -45,3 +45,9 @@ Execution rules:
 2. Do not perform direct implementation.
 3. Summarize specialist outputs before returning to the user.
 4. Keep decisions and approvals explicit.
+
+Project operating context:
+
+1. Add the team project ref for this code workspace.
+2. Add the project domain.
+3. Add the current focus if it helps the first exploration pass.
