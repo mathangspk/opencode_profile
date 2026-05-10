@@ -2,6 +2,86 @@
 
 Portable team workspace for managing code execution, project operations, and Jira or Notion reporting across data, web, and IoT projects.
 
+## Quickstart on a new machine
+
+Run these steps in order on any new Mac or Windows machine:
+
+### 1. Clone this repo
+
+```bash
+git clone git@github.com:mathangspk/opencode_profile.git
+cd opencode_profile
+```
+
+### 2. Create machine identity (one-time)
+
+```bash
+# macOS/Linux
+./install/init-machine.sh
+
+# Windows
+powershell -ExecutionPolicy Bypass -File .\install\init-machine.ps1
+```
+
+This writes a local `.opencode-machine.json` with a unique machine ID (e.g. `macbook-air-m1`).
+
+### 3. See which projects exist
+
+```bash
+cat projects/registry/projects.json
+```
+
+Currently tracked projects:
+
+| ID | Domain | Status |
+|---|---|---|
+| `analysic-data` | data | active |
+| `explore-CAN-message-motor-voltage` | data | active |
+
+### 4. Add your machine paths
+
+Each project needs a local path on your machine. Edit `projects/registry/projects.json`:
+
+```json
+"machine_paths": {
+    "WIN-HYPERV-1": "C:\\local\\analysic-data",
+    "<YOUR-MACHINE-ID>": "/Users/you/projects/analysic-data"
+}
+```
+
+### 5. Clone code repos
+
+Navigate to each path you set above and clone the project code repo.
+
+> If a project has `"repo_url": ""`, the code repo does not exist yet. Create it when ready.
+
+### 6. Activate projects for this machine
+
+```bash
+./install/activate-project-manager.sh analysic-data
+./install/activate-project-manager.sh explore-CAN-message-motor-voltage
+```
+
+### 7. Run first full session
+
+```bash
+./install/start-session.sh --mode full
+```
+
+This verifies:
+- Workspace repo is up to date
+- All active project paths exist
+- Git repos are on the correct branch
+- No dirty or unpushed changes
+
+After the first run, use `quick` mode for daily sessions:
+
+```bash
+./install/start-session.sh
+```
+
+---
+
 ## Operating model
 
 - `1 project = 1 Jira Epic`
@@ -337,15 +417,15 @@ Delete an invalid or sandbox project:
 powershell -ExecutionPolicy Bypass -File .\install\delete-project.ps1 -ProjectId "my-project" -Reason sandbox -Force
 ```
 
-## Bootstrapping on a new machine
+## Bootstrap (optional standalone scripts)
+
+Use these for CI or non-interactive provisioning:
 
 Windows:
 
 ```powershell
 ./install/bootstrap.ps1
 ./install/verify.ps1
-./install/init-machine.ps1
-./install/start-session.ps1 -Mode full
 ```
 
 macOS/Linux:
@@ -353,16 +433,4 @@ macOS/Linux:
 ```bash
 ./install/bootstrap.sh
 ./install/verify.sh
-./install/init-machine.sh
-./install/start-session.sh --mode full
 ```
-
-## First setup checklist
-
-1. Pull the latest `opencode_profile` repo.
-2. Run `./install/bootstrap.ps1` and `./install/verify.ps1`.
-3. Run `./install/init-machine.ps1` or `./install/init-machine.sh` once per machine.
-4. Run `./install/start-session.ps1 -Mode full` or `./install/start-session.sh --mode full`.
-5. Clone or update the code repos for the active projects.
-6. Copy `scaffolds/opencode-project/` into any code repo that does not have it yet.
-7. Test the specialist workflow on one real project before scaling.
