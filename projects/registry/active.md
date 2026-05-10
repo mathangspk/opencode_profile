@@ -1,6 +1,6 @@
 # Active Projects
 
-Generated from projects/registry/projects.json.
+Generated from `projects/registry/projects.json`.
 
 ## Active and paused workset
 
@@ -20,3 +20,11 @@ Generated from projects/registry/projects.json.
    - Approval sensitivity: `medium`
    - QA mode: `data`
    - Current focus: map CAN messages related to motor voltage and identify the source data path
+3. esp_loss_power
+   - Lifecycle: `active`
+   - Jira Epic: `TBD`
+   - Notion page: `TBD`
+   - Phase: `discovery`
+   - Approval sensitivity: `medium`
+   - QA mode: `iot`
+   - Current focus: initial project setup

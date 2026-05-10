@@ -1,0 +1,44 @@
+{
+  "project": {
+    "name": "esp_loss_power",
+    "domain": "iot"
+  },
+  "sources": {
+    "local_path": "/Users/tma/opencode/esp32_loss_power",
+    "repo_url": "",
+    "jira_epic_key": "",
+    "jira_epic_url": "",
+    "notion_page_id": "",
+    "notion_page_link": ""
+  },
+  "reporting": {
+    "cadence": "weekly",
+    "report_day": "Friday",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "publish_mode": "manual-copy",
+    "approval_required": true
+  },
+  "jira": {
+    "enabled": true,
+    "target": "epic-comment",
+    "template": "weekly-comment-template",
+    "fields_to_read": [
+      "status",
+      "summary",
+      "child_issues",
+      "blockers"
+    ]
+  },
+  "notion": {
+    "enabled": true,
+    "target": "weekly-toggle",
+    "template": "weekly-toggle-template",
+    "section_style": "narrative"
+  },
+  "overrides": {
+    "required_sections": [],
+    "commercial_focus": [],
+    "forbidden_claims": [],
+    "team_notes": []
+  }
+}
