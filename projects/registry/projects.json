@@ -8,7 +8,7 @@
       "lifecycle_status": "active",
       "execution_status": "discovery",
       "priority": "medium",
-      "phase": "discovery",
+      "phase": "analysis",
       "report_day": "Friday",
       "approval_sensitivity": "medium",
       "qa_mode": "data",
@@ -24,7 +24,7 @@
       "jira_epic_url": "",
       "notion_page_link": "",
       "notion_page_id": "",
-      "current_focus": "initial project setup and discovery",
+      "current_focus": "re-running and validating the full-angle bench test analysis pipeline",
       "last_team_sync": "",
       "last_repo_sync": "",
       "last_handoff": "",
@@ -94,7 +94,7 @@
       "last_report_draft": "",
       "last_report_published": "",
       "delete_reason": ""
-    }
+    },
     {
       "id": "analysis",
       "name": "analysis",
@@ -106,7 +106,7 @@
       "report_day": "Friday",
       "approval_sensitivity": "low",
       "qa_mode": "data",
-      "project_home": "",
+      "project_home": "projects/ops/analysis",
       "repo_url": "",
       "repo_required": false,
       "machine_paths": {

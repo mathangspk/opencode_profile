@@ -10,32 +10,32 @@
 ## Repositories
 
 - Repo URL:
-- Local path: `C:\local\analysic-data`
+- Local path: `C:\local\opencode\data\analysic-data`
 - Default branch: `main`
 
 ## Jira
 
-- Jira project key:
-- Jira Epic key:
-- Jira Epic URL:
+- Jira project key: TBD
+- Jira Epic key: TBD
+- Jira Epic URL: TBD
 
 ## Notion
 
-- Notion page link:
-- Notion page id:
+- Notion page link: TBD
+- Notion page id: TBD
 
 ## Delivery context
 
-- Commercial context:
-- Current phase: discovery
-- Definition of done:
+- Commercial context: motor controller electrical angle offset optimization under no-load
+- Current phase: analysis
+- Definition of done: validated full-angle bench test analysis pipeline, automated report generation, and comparison with legacy scripts
 - Weekly report day: `Friday`
 - Approval sensitivity: `medium`
 
 ## Working context
 
-- Current focus: initial project setup and discovery
-- Known blockers:
+- Current focus: re-running and validating the full-angle bench test analysis pipeline
+- Known blockers: GitHub CLI not installed, GitHub token missing, repo not initialized
 - Key risks:
 - Reporting notes:
 

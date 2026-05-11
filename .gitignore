@@ -1,2 +1,6 @@
+# Machine-specific files
 .opencode-machine.json
 .DS_Store
+
+# Antigravity local cache (do not commit)
+.agents/.cache/
