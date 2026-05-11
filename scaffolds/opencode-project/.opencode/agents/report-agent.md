@@ -1,7 +1,6 @@
 ---
 description: Weekly reporting agent for Jira Epic and Notion status drafts.
 mode: subagent
-model: openai/gpt-5.4
 temperature: 0.1
 permission:
   read: allow

@@ -1,0 +1,78 @@
+# Team Workflow
+
+## A. Default flow — Review Gate
+For non-trivial work, dirty worktrees, or multi-session tasks:
+1. Audit
+2. Fix Plan
+3. Approval Gate
+4. Delivery
+5. Test
+6. Final Review
+7. User Testing
+8. Commit and Push
+
+## B. Lightweight flow — BMAD
+For trivial or well-scoped tasks:
+1. Brief (goal, acceptance criteria, out of scope)
+2. Mapping (relevant files, runtime state, failure points)
+3. Architecture (smallest correct approach)
+4. Delivery (make change, verify, keep scope narrow)
+5. Review (regressions, operational risk, missing verification)
+
+## Delegation policy
+- Primary agent owns: planning, sequencing, approvals, implementation decisions, verification decisions, commit/push, handoff updates.
+- Subagents only act on explicit instructions from primary agent.
+- Subagents do not self-initiate, expand scope, or continue into follow-up phases.
+- Subagents must return control to primary agent after finishing assigned contract.
+- Primary agent remains source of truth for overall context and final decisions.
+- For non-trivial implementation, delegate code writing to `code-agent`.
+- For trivial fully-local work, delegate to `code-agent` directly.
+
+## Specialist agent role mapping
+- `explore-agent` → repo mapping, cross-file discovery, endpoint tracing, schema tracing, VPS inspection
+- `code-agent` → implement approved fixes (edit: allow, bash: ask)
+- `review-agent` → read-only review, audit, final review (edit: deny)
+- `qa-agent` → validation, regression assessment (edit: deny)
+- `report-agent` → weekly reporting, stakeholder summaries (edit: deny)
+
+## Model routing
+Default to cheaper first, escalate only when needed:
+- `gpt mini` or equivalent: short rewrites, checklists, summaries, handoff text
+- `Minimax M2.5 free` or equivalent: mapping, docs, code-flow summaries, first-pass bug hypotheses
+- `gpt-5.3 codex` or equivalent: code changes, endpoint work, tight fix loops
+- `gpt-5.4`: hard debugging, firmware+backend interactions, cross-file reasoning, final risk review
+- `gpt-5.5`: major architecture changes and broad redesign
+
+## Verification rules
+Do not treat change as complete until relevant checks pass:
+- Firmware changes: run appropriate build command
+- Runtime checks: inspect serial or logs
+- Network changes: verify expected Wi-Fi, MQTT, or HTTP behavior
+- VPS deploys: verify compose/container state and health endpoint
+- Device upload: verify with appropriate serial tool
+
+## Commit and push policy
+- Commit only after milestone is verified.
+- Keep commits scoped to one technical outcome.
+- Push after each successful milestone.
+- Do not force-push.
+- Do not rewrite history unless user explicitly asks.
+- Update `docs/handoff.md` after each verified milestone with: what was confirmed, what changed, remaining issues, exact next step.
+
+## Workspace convention
+All projects follow a standard workspace layout. `workspace_root` is stored in `.opencode-machine.json`.
+
+```
+{workspace_root}/
+  opencode_profile/          # team workspace
+  data/                      # data domain projects
+    <project>/
+  iot/                       # iot domain projects
+    <project>/
+  web/                       # web domain projects
+    <project>/
+```
+
+- From any project at `{workspace_root}/<domain>/<project>/`, the team workflow is at `../../opencode_profile/.opencode/workflow.md`.
+- From `opencode_profile/`, reference the workflow at `.opencode/workflow.md`.
+- Resolve `workspace_root` from `.opencode-machine.json` in the opencode_profile root, or from the convention above.

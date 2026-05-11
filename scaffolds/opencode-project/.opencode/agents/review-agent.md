@@ -1,7 +1,6 @@
 ---
 description: Code and architecture review agent that reports findings and proposals without editing code.
 mode: subagent
-model: openai/gpt-5.4
 temperature: 0.1
 permission:
   read: allow

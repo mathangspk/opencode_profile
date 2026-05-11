@@ -20,6 +20,7 @@ case "$UNAME_VALUE" in
 esac
 MACHINE_ID=${1:-"$PREFIX-$HOST_NAME"}
 OWNER=${2:-"${USER:-unknown}"}
+WORKSPACE_ROOT=$(CDPATH= cd -- "$ROOT/.." && pwd)
 
 cat > "$MACHINE_FILE" <<EOF
 {
@@ -27,6 +28,8 @@ cat > "$MACHINE_FILE" <<EOF
   "machine_name": "${HOST_NAME}",
   "platform": "${PLATFORM}",
   "owner": "${OWNER}",
+  "workspace_root": "${WORKSPACE_ROOT}",
+  "team_workspace": "${ROOT}",
   "created_at": "$(date -u +%Y-%m-%dT%H:%M:%SZ)"
 }
 EOF

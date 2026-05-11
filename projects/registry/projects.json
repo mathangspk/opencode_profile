@@ -16,9 +16,9 @@
       "repo_url": "",
       "repo_required": true,
       "machine_paths": {
-        "WIN-HYPERV-1": "C:\\local\\analysic-data"
+        "WIN-HYPERV-1": "C:\\local\\opencode\\data\\analysic-data"
       },
-      "local_path": "C:\\local\\analysic-data",
+      "local_path": "C:\\local\\opencode\\data\\analysic-data",
       "default_branch": "main",
       "jira_epic_key": "",
       "jira_epic_url": "",
@@ -47,9 +47,9 @@
       "repo_url": "",
       "repo_required": true,
       "machine_paths": {
-        "WIN-HYPERV-1": "C:\\local\\find_motor_voltage"
+        "WIN-HYPERV-1": "C:\\local\\opencode\\data\\explore-CAN-message-motor-voltage"
       },
-      "local_path": "C:\\local\\find_motor_voltage",
+      "local_path": "C:\\local\\opencode\\data\\explore-CAN-message-motor-voltage",
       "default_branch": "main",
       "jira_epic_key": "",
       "jira_epic_url": "",
@@ -78,15 +78,47 @@
       "repo_url": "git@github.com:mathangspk/ESP32_meter.git",
       "repo_required": true,
       "machine_paths": {
-        "MAC-TMAS-IMAC-PRO.LOCAL": "/Users/tma/opencode/esp32_loss_power"
+        "MAC-TMAS-IMAC-PRO.LOCAL": "/Users/tma/opencode/iot/esp32_loss_power",
+        "WIN-HYPERV-1": "C:\\local\\opencode\\iot\\esp32_loss_power"
       },
-      "local_path": "/Users/tma/opencode/esp32_loss_power",
+      "local_path": "/Users/tma/opencode/iot/esp32_loss_power",
       "default_branch": "main",
       "jira_epic_key": "",
       "jira_epic_url": "",
       "notion_page_link": "",
       "notion_page_id": "",
       "current_focus": "initial project setup",
+      "last_team_sync": "",
+      "last_repo_sync": "",
+      "last_handoff": "",
+      "last_report_draft": "",
+      "last_report_published": "",
+      "delete_reason": ""
+    }
+    {
+      "id": "analysis",
+      "name": "analysis",
+      "domain": "ops",
+      "lifecycle_status": "active",
+      "execution_status": "active",
+      "priority": "medium",
+      "phase": "operations",
+      "report_day": "Friday",
+      "approval_sensitivity": "low",
+      "qa_mode": "data",
+      "project_home": "",
+      "repo_url": "",
+      "repo_required": false,
+      "machine_paths": {
+        "WIN-HYPERV-1": "C:\\local\\opencode\\analysis"
+      },
+      "local_path": "C:\\local\\opencode\\analysis",
+      "default_branch": "main",
+      "jira_epic_key": "",
+      "jira_epic_url": "",
+      "notion_page_link": "",
+      "notion_page_id": "",
+      "current_focus": "workspace management and benchmarking",
       "last_team_sync": "",
       "last_repo_sync": "",
       "last_handoff": "",

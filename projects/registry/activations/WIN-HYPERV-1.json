@@ -1,0 +1,14 @@
+{
+  "machine_id": "WIN-HYPERV-1",
+  "machine_name": "HYPERV-1",
+  "platform": "windows",
+  "updated_at": "2026-05-10T14:45:49Z",
+  "projects": [
+    {
+      "project_id": "esp_loss_power",
+      "activated_at": "2026-05-10T14:45:34Z",
+      "last_seen_at": "2026-05-10T14:45:49Z",
+      "status": "active"
+    }
+  ]
+}
