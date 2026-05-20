@@ -364,7 +364,7 @@ Project operating context:
 ### Scaffold rules
 
 1. `orchestrator` is the default primary agent.
-2. All agents are bound to `openai/gpt-5.4`.
+2. All agents use `opencode/qwen3.6-plus-free`.
 3. `orchestrator` can call specialist agents through `task` permission.
 4. `orchestrator` is denied direct file edits.
 5. Specialist permissions enforce role separation.

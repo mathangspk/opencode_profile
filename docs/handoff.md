@@ -1,5 +1,26 @@
 # Handoff — Workspace Standardization
 
+## Session handoff — 2026-05-20
+Machine: WIN-HYPERV-1
+
+### Completed
+- Switched canonical OpenCode model routing to `opencode/qwen3.6-plus-free` for orchestrator and all specialist agents.
+- Removed remaining `hy3-preview` references from active workspace configs, templates, project profiles, scaffold config, and workflow docs.
+- Updated `orchestrator.md` to treat `.xml` and CODESYS/PLC project files as source code that must be delegated to subagents.
+- Simplified `orchestrator.md` frontmatter so permissions/models are sourced from `opencode.json` only.
+- Added and scaffolded the new managed project `codesys-apollo` under `projects/iot/codesys-apollo`.
+
+### Current state
+- Branch: `main`
+- Last verified: canonical `opencode.json`, scaffold `opencode.json`, and `codesys/opencode.json` all point every configured agent to `opencode/qwen3.6-plus-free`; `hy3-preview` remains only in this handoff history.
+- Known issues: Desktop App / sidecar may still need a full restart before new model/delegation settings are reflected live.
+
+### Exact next step
+Fully restart OpenCode Desktop App (and any `opencode-cli.exe` sidecar), then start a fresh session in `codesys` and verify that XML/CODESYS file review is delegated to a subagent.
+
+### Context for next session
+The canonical config is `C:\local\opencode\opencode.json`. Most project `opencode.json` files are symlinked to it; `C:\local\opencode\codesys\opencode.json` is a scaffold copy that was updated separately. `docs/handoff.md` keeps historical references to old models on purpose; active configs/docs now use `opencode/qwen3.6-plus-free`.
+
 ## What was done
 
 ### Workspace layout restructuring
@@ -15,8 +36,8 @@
 ### Configuration centralization
 - Created canonical `opencode.json` at `C:\local\opencode\opencode.json`
 - All project `opencode.json` replaced with symlinks to canonical file
-- Model set to `opencode/big-pickle` (gpt-5.4 not working)
-- Added native `fallback_models: ["openai/gpt-5.4"]` to all 6 agents
+- Model set to `openrouter/tencent/hy3-preview` (gpt-5.4 not working)
+
 - Removed plugin `@razroo/opencode-model-fallback` from all configs
 - Removed `fallback_models` from YAML frontmatter in all agent .md files (25 files)
 - Removed `model` from YAML frontmatter in all agent .md files (25 files) — model now comes from canonical JSON only
@@ -60,7 +81,7 @@ C:\local\opencode\
 
 ## Next steps / known issues
 
-- gpt-5.4 not working → switched to opencode/big-pickle with fallback
+- gpt-5.4 not working → switched to openrouter/tencent/hy3-preview
 - Symlinks require admin on Windows (Developer Mode off)
 - Remaining model routing docs in workflow.md reference gpt models not configured in this workspace
 - Consider registering `analysis/` project properly with a profile.md

@@ -59,7 +59,7 @@
 
 - OpenCode scaffold copied: `yes`
 - Default primary agent: `orchestrator`
-- Default model: `openai/gpt-5.4`
+- Default model: `opencode/qwen3.6-plus-free`
 - Agent overrides:
 - Team project ref: `projects/data/analysic-data`
 

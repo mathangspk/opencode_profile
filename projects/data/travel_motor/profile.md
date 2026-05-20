@@ -2,15 +2,16 @@
 
 ## Identity
 
-- Project name:
-- Domain: `data` | `web` | `iot`
-- Status: `idea` | `active` | `paused` | `done` | `archived`
-- Priority:
+- Project name: travel_motor
+- Domain: `data`
+- Status: `active`
+- Priority: `medium`
 
 ## Repositories
 
-- Repo URL:
-- Local path:
+- Repo URL: 
+- Local path: `C:\local\opencode\data\travel_motor`
+- Default branch: `main`
 
 ## Jira
 
@@ -26,14 +27,14 @@
 ## Delivery context
 
 - Commercial context:
-- Current phase:
+- Current phase: discovery
 - Definition of done:
 - Weekly report day: `Friday`
-- Approval sensitivity: `low` | `medium` | `high`
+- Approval sensitivity: `medium`
 
 ## Working context
 
-- Current focus:
+- Current focus: `analysic data`
 - Known blockers:
 - Key risks:
 - Reporting notes:
@@ -56,16 +57,17 @@
 
 ## OpenCode setup
 
-- OpenCode scaffold copied: `yes` | `no`
+- OpenCode scaffold copied: `yes`
 - Default primary agent: `orchestrator`
 - Default model: `opencode/qwen3.6-plus-free`
 - Agent overrides:
+- Team project ref: `projects/data/travel_motor`
 
 ## Testing and validation
 
 - Testing strategy:
 - Acceptance checks:
-- QA mode: `data` | `web` | `iot`
+- QA mode: `data`
 - QA priorities:
 
 ## Agent notes
@@ -73,3 +75,4 @@
 - Review priorities:
 - Areas to avoid unless required:
 - Expected output style:
+

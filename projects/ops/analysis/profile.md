@@ -57,7 +57,7 @@
 
 - OpenCode scaffold copied: `yes`
 - Default primary agent: `orchestrator`
-- Default model: `opencode/big-pickle`
+- Default model: `opencode/qwen3.6-plus-free`
 - Team project ref: `projects/ops/analysis`
 
 ## Testing and validation

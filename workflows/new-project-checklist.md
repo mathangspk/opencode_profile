@@ -78,7 +78,7 @@ I need:
 ## 6. Sanity check before real work
 
 1. Confirm `orchestrator` is the default primary agent.
-2. Confirm all agents are bound to `openai/gpt-5.4`.
+2. Confirm all agents use `opencode/qwen3.6-plus-free`.
 3. Confirm `orchestrator` cannot edit files directly.
 4. Confirm the selected QA mode matches the project domain.
 5. Confirm the Jira Epic and Notion page are correct.

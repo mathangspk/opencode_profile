@@ -36,12 +36,7 @@ For trivial or well-scoped tasks:
 - `report-agent` → weekly reporting, stakeholder summaries (edit: deny)
 
 ## Model routing
-Default to cheaper first, escalate only when needed:
-- `gpt mini` or equivalent: short rewrites, checklists, summaries, handoff text
-- `Minimax M2.5 free` or equivalent: mapping, docs, code-flow summaries, first-pass bug hypotheses
-- `gpt-5.3 codex` or equivalent: code changes, endpoint work, tight fix loops
-- `gpt-5.4`: hard debugging, firmware+backend interactions, cross-file reasoning, final risk review
-- `gpt-5.5`: major architecture changes and broad redesign
+All agents use `opencode/qwen3.6-plus-free`. No lane splitting.
 
 ## Verification rules
 Do not treat change as complete until relevant checks pass:
