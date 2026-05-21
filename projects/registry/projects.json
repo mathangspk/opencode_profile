@@ -187,6 +187,37 @@
                          "last_report_draft":  "",
                          "last_report_published":  "",
                          "delete_reason":  ""
+                     },
+                     {
+                         "id":  "edge-device-manager",
+                         "name":  "edge-device-manager",
+                         "domain":  "iot",
+                         "lifecycle_status":  "planned",
+                         "execution_status":  "not-started",
+                         "priority":  "medium",
+                         "phase":  "discovery",
+                         "report_day":  "Friday",
+                         "approval_sensitivity":  "medium",
+                         "qa_mode":  "iot",
+                         "project_home":  "projects/iot/edge-device-manager",
+                         "repo_url":  "",
+                         "repo_required":  true,
+                         "machine_paths":  {
+                                               "WIN-HYPERV-1":  "C:\\local\\opencode\\iot\\edge-device-manager"
+                                           },
+                         "local_path":  "C:\\local\\opencode\\iot\\edge-device-manager",
+                         "default_branch":  "main",
+                         "jira_epic_key":  "",
+                         "jira_epic_url":  "",
+                         "notion_page_link":  "",
+                         "notion_page_id":  "",
+                         "current_focus":  "",
+                         "last_team_sync":  "",
+                         "last_repo_sync":  "",
+                         "last_handoff":  "",
+                         "last_report_draft":  "",
+                         "last_report_published":  "",
+                         "delete_reason":  ""
                      }
                  ]
 }
