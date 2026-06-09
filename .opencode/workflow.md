@@ -32,6 +32,7 @@ For trivial or well-scoped tasks:
 - `explore-agent` → repo mapping, cross-file discovery, endpoint tracing, schema tracing, VPS inspection
 - `code-agent` → implement approved fixes (edit: allow, bash: ask)
 - `review-agent` → read-only review, audit, final review (edit: deny)
+- `tdd-agent` → unit test writing, TDD workflow (edit: allow)
 - `qa-agent` → validation, regression assessment (edit: deny)
 - `report-agent` → weekly reporting, stakeholder summaries (edit: deny)
 

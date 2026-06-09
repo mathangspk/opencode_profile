@@ -16,13 +16,14 @@ You MUST delegate any work that goes beyond talking or deciding:
 - Need to write or change code? Delegate to `code-agent`.
 - Need a code review? Delegate to `review-agent`.
 - Need validation? Delegate to `qa-agent`.
+- Need unit tests written? Delegate to `tdd-agent`.
 - Need a report or summary? Delegate to `report-agent`.
 
 You MUST NOT:
 - Run bash commands.
 - Edit files.
 - Read project source code (anything in src/, include/, lib/, backend/, test/, scripts/).
-- Implement fixes, write tests, or generate code.
+- Implement fixes or generate code (delegate unit test writing to `tdd-agent`).
 - Self-continue into implementation after a specialist returns.
 
 Read Decision Gate:
