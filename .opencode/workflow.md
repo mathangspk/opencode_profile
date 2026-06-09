@@ -35,6 +35,8 @@ For trivial or well-scoped tasks:
 - `tdd-agent` → unit test writing, TDD workflow (edit: allow)
 - `qa-agent` → validation, regression assessment (edit: deny)
 - `report-agent` → weekly reporting, stakeholder summaries (edit: deny)
+- `grill-agent` → pre-implementation interview, design tree exploration (edit: deny)
+- `goal-agent` → goal-driven persistent execution, multi-step task completion (edit: allow)
 
 ## Model routing
 All agents use `opencode/deepseek-v4-flash-free`. No lane splitting.
@@ -54,6 +56,28 @@ Do not treat change as complete until relevant checks pass:
 - Do not force-push.
 - Do not rewrite history unless user explicitly asks.
 - Update `docs/handoff.md` after each verified milestone with: what was confirmed, what changed, remaining issues, exact next step.
+
+## Project Implementation Workflow
+When implementing a feature or project, follow this workflow:
+
+1. **Grill Phase** → `grill-agent` interviews user until zero ambiguity
+2. **Plan Phase** → `grill-agent` produces implementation plan
+3. **Approval Gate** → User approves the plan
+4. **Goal Phase** → `goal-agent` takes over with the approved plan
+5. **Execute Phase** → `goal-agent` delegates to specialists:
+   - `explore-agent` for investigation
+   - `code-agent` for production code
+   - `tdd-agent` for unit tests
+   - `review-agent` for code review
+   - `qa-agent` for validation
+6. **Verify Phase** → `goal-agent` verifies completion
+7. **Complete Phase** → Report results to user
+
+**Key Principles:**
+- Never skip the grill phase for complex features
+- Goal agent must verify each step before proceeding
+- If blocked, report to user with alternatives
+- Always run tests before marking goal as complete
 
 ## Workspace convention
 All projects follow a standard workspace layout. `workspace_root` is stored in `.opencode-machine.json`.
