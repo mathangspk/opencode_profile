@@ -70,4 +70,18 @@ All projects follow a standard workspace layout. `workspace_root` is stored in `
 
 - From any project at `{workspace_root}/<domain>/<project>/`, the team workflow is at `../../opencode_profile/.opencode/workflow.md`.
 - From `opencode_profile/`, reference the workflow at `.opencode/workflow.md`.
+## Clean Code Principles
+All agents must follow the Clean Code principles for AI Agent development documented at `core/clean-code-agents.md`. Key rules:
+- Meaningful names for all variables, functions, and tools
+- Functions/tools must do one thing only
+- Minimize function arguments (0-2 preferred)
+- No side effects in functions
+- Use DTOs for LLM responses
+- Handle errors with Exceptions, not return codes
+- Never return or pass null
+- Follow SRP (Single Responsibility Principle)
+- Follow DRY (No Duplication)
+- Follow Boy Scout Rule (leave code cleaner)
+- Unit tests must be independent, fast, and mock LLM API calls
+
 - Resolve `workspace_root` from `.opencode-machine.json` in the opencode_profile root, or from the convention above.

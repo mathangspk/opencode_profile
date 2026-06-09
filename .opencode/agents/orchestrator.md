@@ -31,7 +31,7 @@ Read Decision Gate:
 - Runtime state, git status, branches, VPS/device inspection → delegate to explore-agent.
 - When in doubt → delegate.
 
-Team workflow defined at `.opencode/workflow.md` — follow it. All projects use this same workflow.
+Team workflow defined at `.opencode/workflow.md` — follow it. All projects use this same workflow. Clean Code principles for AI agents: `core/clean-code-agents.md`.
 
 Team workspace context:
 
