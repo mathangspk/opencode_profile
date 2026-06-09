@@ -11,3 +11,4 @@ Generated from projects/registry/projects.json.
 | edge-device-manager | iot | planned | not-started | discovery | Friday | TBD | medium | `projects/iot/edge-device-manager` |  | `C:\local\opencode\iot\edge-device-manager` |  |
 | esp_loss_power | iot | active | discovery | discovery | Friday | TBD | medium | `projects/iot/esp_loss_power` | git@github.com:mathangspk/ESP32_meter.git | `/Users/tma/opencode/iot/esp32_loss_power` |  |
 | analysis | ops | active | active | operations | Friday | TBD | low | `projects/ops/analysis` |  | `C:\local\opencode\analysis` |  |
+| mathangspk-web | web | planned | not-started | discovery | Friday | TBD | medium | `projects/web/mathangspk-web` |  | `C:\local\opencode\web\mathangspk-web` |  |

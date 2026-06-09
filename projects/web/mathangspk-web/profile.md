@@ -1,16 +1,16 @@
-# Project Profile
+﻿# Project Profile
 
 ## Identity
 
-- Project name: travel_motor
-- Domain: `data`
-- Status: `active`
-- Priority: `medium`
+- Project name: mathangspk-web
+- Domain: `web`
+- Status: `planned`
+- Priority: medium
 
 ## Repositories
 
-- Repo URL: 
-- Local path: `C:\local\opencode\data\travel_motor`
+- Repo URL: git@github.com:mathangspk/web_mathangspk.git
+- Local path: `C:\local\opencode\web\mathangspk-web`
 - Default branch: `main`
 
 ## Jira
@@ -34,7 +34,7 @@
 
 ## Working context
 
-- Current focus: `analysic data`
+- Current focus: Initial project setup - website ca nhan va subdomain phat trien app ca nhan
 - Known blockers:
 - Key risks:
 - Reporting notes:
@@ -57,17 +57,17 @@
 
 ## OpenCode setup
 
-- OpenCode scaffold copied: `yes`
+- OpenCode scaffold copied: yes
 - Default primary agent: `orchestrator`
 - Default model: `opencode/deepseek-v4-flash-free`
 - Agent overrides:
-- Team project ref: `projects/data/travel_motor`
+- Team project ref: `projects/web/mathangspk-web`
 
 ## Testing and validation
 
 - Testing strategy:
 - Acceptance checks:
-- QA mode: `data`
+- QA mode: `web`
 - QA priorities:
 
 ## Agent notes

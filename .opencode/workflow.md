@@ -36,7 +36,7 @@ For trivial or well-scoped tasks:
 - `report-agent` → weekly reporting, stakeholder summaries (edit: deny)
 
 ## Model routing
-All agents use `opencode/qwen3.6-plus-free`. No lane splitting.
+All agents use `opencode/deepseek-v4-flash-free`. No lane splitting.
 
 ## Verification rules
 Do not treat change as complete until relevant checks pass:

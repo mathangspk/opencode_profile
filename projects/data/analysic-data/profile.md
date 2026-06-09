@@ -59,7 +59,7 @@
 
 - OpenCode scaffold copied: `yes`
 - Default primary agent: `orchestrator`
-- Default model: `opencode/qwen3.6-plus-free`
+- Default model: `opencode/deepseek-v4-flash-free`
 - Agent overrides:
 - Team project ref: `projects/data/analysic-data`
 
