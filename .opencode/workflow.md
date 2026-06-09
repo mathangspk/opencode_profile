@@ -37,9 +37,10 @@ For trivial or well-scoped tasks:
 - `report-agent` → weekly reporting, stakeholder summaries (edit: deny)
 - `grill-agent` → pre-implementation interview, design tree exploration (edit: deny)
 - `goal-agent` → goal-driven persistent execution, multi-step task completion (edit: allow)
+- `vision-agent` → image/screenshot evaluation, UI testing, visual review (edit: deny, model: mimo-v2.5-free)
 
 ## Model routing
-All agents use `opencode/deepseek-v4-flash-free`. No lane splitting.
+All agents use `opencode/deepseek-v4-flash-free`. Exception: `vision-agent` uses `opencode/mimo-v2.5-free` for image evaluation.
 
 ## Verification rules
 Do not treat change as complete until relevant checks pass:
@@ -70,6 +71,7 @@ When implementing a feature or project, follow this workflow:
    - `tdd-agent` for unit tests
    - `review-agent` for code review
    - `qa-agent` for validation
+   - `vision-agent` for image/screenshot evaluation (when UI testing or visual review is needed)
 6. **Verify Phase** → `goal-agent` verifies completion
 7. **Complete Phase** → Report results to user
 
