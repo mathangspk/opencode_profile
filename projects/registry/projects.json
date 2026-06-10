@@ -279,7 +279,38 @@
                          "last_handoff":  "",
                          "last_report_draft":  "",
                          "last_report_published":  "",
+                        "delete_reason":  ""
+                     },
+                     {
+                         "id":  "diablo",
+                         "name":  "diablo",
+                         "domain":  "game",
+                         "lifecycle_status":  "planned",
+                         "execution_status":  "idle",
+                         "priority":  "medium",
+                         "phase":  "discovery",
+                         "report_day":  "Friday",
+                         "approval_sensitivity":  "medium",
+                         "qa_mode":  "web",
+                         "project_home":  "projects/game/diablo",
+                         "repo_url":  "",
+                         "repo_required":  true,
+                         "machine_paths":  {
+                                               "WIN-HYPERV-1":  "C:\\local\\opencode\\game"
+                                           },
+                         "local_path":  "C:\\local\\opencode\\game",
+                         "default_branch":  "main",
+                         "jira_epic_key":  "",
+                         "jira_epic_url":  "",
+                         "notion_page_link":  "",
+                         "notion_page_id":  "",
+                         "current_focus":  "Project setup",
+                         "last_team_sync":  "",
+                         "last_repo_sync":  "",
+                         "last_handoff":  "",
+                         "last_report_draft":  "",
+                         "last_report_published":  "",
                          "delete_reason":  ""
                      }
-                 ]
+                  ]
 }
